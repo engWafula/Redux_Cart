@@ -11,14 +11,11 @@ import reducer from "./reducer";
 //reducer
 
 //initial store
-const initialStore={
-  cart:cartItems,
-  total:9,
-  amount:3
-}
 
 
-const store=createStore(reducer,initialStore);
+
+const store=createStore(reducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 
 
